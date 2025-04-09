@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd notesapp
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: notesapp/dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - notesapp/node_modules/**/*
