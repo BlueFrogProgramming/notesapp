@@ -1,9 +1,9 @@
 version: 1
-backend:
-  phases:
-    build:
-      commands:
-        - npm ci
+#backend:
+#  phases:
+#    build:
+#      commands:
+#        - npm ci
 frontend:
   phases:
     preBuild:
